@@ -1,219 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+<title>Rajis kitchen payment</title>
 <meta name="viewport content="width=device-width, initial-scale="1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
 
-<a href="ABOUTME.html"> <img src="IMAGES/homepageimage.jpg" width="40" height="40"> </a>
-<style>
-    body {
-        font-family: Arial;
-        font-size: 17px;
-        padding: 8px;
-    }
-  
-    *{
-    box-sizing: border-box;
-  }
-
-  .row{
-      display: -ms-flexbox; /* <IE10></IE10>
-   display:flex;
-   -ms-flex-wrap: wrap; /*IE10*/
-   flex-wrap: wrap;
-   margin: 0 -16px;
-  }
-
-  .col-25 {
-      -ms-flex: 25%; /*IE10*/
-      flex: 25%;
-  }
-
-.col-50 {
-    -ms-flex: 50%; /*IE10*/
-      flex: 50%;
+<script type="text/javascript">
+function checkout(){
+    document.write("Thank YOU!!Payment submitted successfully!");
+    window.alert("Thank YOU!!Payment submitted successfully!");
 }
-
-.col-75{
-    -ms-flex: 75%; /*IE10*/
-      flex: 75%;
-}
-    
- .col-25,
- .col-75,
- .col-75 {
-     padding: 0 16px;
- }  
- 
-.container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-input[type-text]{
-    width: 100%;
-    margin-bottom:20px;
-    padding:12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-label {
-    margin-bottom:10px;
-    display :block;
-}
-
-.icon-container{
-    margin-bottom:20px;
-    padding:7px 0;
-    font-size:24px;
-    }
-
-a {
-    color:#2196F3;
-    }
-
-    hr {
-        border: 1px solid lightgray
-    }
-
-span.price{
-    float: right;
-    color:grey;
-}
-
- /*giResponsive layout - when the screen is less than 800px wide,make the two columns stack on top of each other istead of next to each other (a1
- @media (max-width: 800px){
-     .row{
-         flex-direction:column-reverse;
-     }
- .col-25{
-     margin-bottom:20px;
- }
-    
-/*
-</style>
-<style>
-
-        #button1{
-        background-color: red;
-        width:14% ; 
-        height: 6%;
-        }
-        
-        </Style> 
-
-<a href="ABOUTME.html"> 
-        <input type="submit" value="ABOUTME" id="button1"/></a>
-        <a href="RECIPES.html">
-        <input type="submit" value="RECIPES" id="button1"/></a>
-        <a href="PASTRIES.html">
-        <input type="submit" value="PASTRIES" id="button1"/></a>
-        <a href="Contact.html">
-        <input type="submit" value="CONTACT" id="button1"/></a>
-        <a href="PAYMENT.html">
-        <input type="submit" value="PAYMENT" id="button1"/></a>
-        </button> 
-
+</script>
 </head>
-</body>
-<h2>Responsive check out form </h2>
-<p> Resize the browser to see the effect.When the screen is less than 800px wide,make the two columns stack on top each other instead</p>
+<body>
+<header>
+<br>
+            <div align="center">
+                 <img src="images/logo.png" height="15%" width="20%"> </img>
+            </div>
+               <font size="40" color ="red"> <marquee behavior="alternate"> <b>Welcome to RAJIS Kitchen </b></marquee></font>
+            <br>
+</header>
+<nav>
+<a href="index.html"> <img src="IMAGES/homepageimage.jpg" width="50" height="50"> </a>
+<a href="ABOUTME.html"> 
+<input type="submit" value="ABOUTME" id="button1"/></a>
+<a href="RECIPES.html">
+<input type="submit" value="RECIPES" id="button1"/></a>
+<a href="PASTRIES.html">
+<input type="submit" value="PASTRIES" id="button1"/></a>
+<a href="Contact.html">
+<input type="submit" value="CONTACT" id="button1"/></a>
+<a href="PAYMENT.html">
+<input type="submit" value="PAYMENT" id="button1"/></a>
+</button>
+</nav>
+<br>
+
+<h1 style="color:purple">Check out form </h1>
+
 <div class="row">
   <div class="col-75">
     <div class="container">
-        <form action="/action_page.php">
-
+        <form name="payment" onsubmit="checkout()">
             <div class="row">
                 <div class ="col-50">
                     <h3>Billing address</h3>
                     <label for="fname"><i class="fa fa-user"></i>Full Name </label>
-                    <input type="text" id="fname" name="firstname" placeholder="Raji">
-                    <label for="email"><id class="fa fa-envelope"></i>Email</label>
-                    <input type="text" id="email" name="email" placeholder="raji@example.com">
-                    <label for "adr"><i class ="fa fa-address"></i>Address</label>
-                        <input type ="text" id="adr" name="address" placeholder ="village">
+                    <input type="text" id="fname" name="firstname" placeholder="Raji" required><br>
+                    <label for="email" id="fname" class="fa fa-envelope"></i>Email</label><br>  
+                    <input type="text" id="email" name="email" placeholder="raji@example.com" required>
+                    <label for ="adr"><i class ="fa fa-address"></i>Address</label>
+                    <input type ="text" id="adr" name="address" placeholder ="village" required>
                      <label for="city"><i class="fa fa-institution"></i>City</label>
-                     <input type = "text" id="city" name="city"placeholder="Atlanta">
-
+                     <input type = "text" id="city" name="city"placeholder="Atlanta" required>
+             </div></div>
                      <div class="row">
                         <div class="col-50">
-                            <label for "state">State</label>
-                                <input type="text" id="state" "name""state" placeholder="NY">
-                                </div>
-                                    <div class="col-50">
-                                    <label for="zip">ZIP</label>
-                                    <input type="text" id="ZIP" name="ZIP"placeholder="10001">
-                                    </div>
-                                    
-                                    </div>
-                                                    
-                                    </div>
-    <div class="col-50">
-        <h3> Payment </h3>
-        <label for ="fname">Accepted cards</label>
-        <div class="icon-container">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="NY" required>
+                        </div>
+                         <div class="col-50">
+                        <label for="zip">ZIP</label>
+                        <input type="text" id="ZIP" name="ZIP"placeholder="10001" required>
+                    </div>
+
+                 <div class="col-50">
+                 <h3> Payment </h3>
+                <label for ="fname">Accepted cards</label>
+            
+            <div class="icon-container">
             <i class ="fa fa-cc-visa" style="color navy;"></i>
             <i class ="fa fa-cc-amex" style="color blue;"></i>
             <i class ="fa fa-cc-mastercard" style="color red;"></i>
             <i class ="fa fa-cc-discover" style="color orange;"></i>
-        </div>
+           </div>
+
         <label for="cname">Name on card</label>
-        <input type="text" id="cname" name="cardname" placeholder="Raji">
+        <input type="text" id="cname" name="cardname" placeholder="Raji" required>
         <label for ="ccnum">Credit card number</label>
-        <input type="text" id=" ccnum" name "cardnumber" placeholder="1111-2222-3333-4444">
+        <input type="text" id=" ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
         <label for ="expmonth"> Exp Month</label>
-        <input type="text" id="expmonth" name="expmonth" placeholder ="September">
+        <input type="text" id="expmonth" name="expmonth" placeholder ="September" required>
+    </div></div>
         <div class="row">
             <div class ="col-50">
               <label for ="expyear" > Exp year</label>
-              <input type ="text" id ="expyear" name="expyear" placeholder="2018">
+              <input type ="text" id ="expyear" name="expyear" placeholder="2018" required>
                 
             </div>
             <div class = "col-50">
                 <label for ="cvv"> CVV </label>
-                <input type ="text" id="cvv" name="cvv "placeholder="352">
+                <input type ="text" id="cvv" name="cvv "placeholder="352" required>
                         </div>
                         
+                            <input type ="checkbox" checked= "checked" name= "raji"> shipping address same as billing</input> <br>
                         
-                        <label>
-                            <input type ="checkbox" checked= " checked" name= "raji" shipping address same as billing
-                            </label>
-                            <input type ="submit" value=" continue to checkout" class="btn">
-                            </form>
                             </div>
                             </div>
                                 
-                <div class="col-25">
+                <div class="col-50">
                     <div class ="container">
-                        <h4>CART <span class ="price" style="color:red "<i class="fa fa-shopping cart"></i><b></b></h4></span></h4>
+                        <h4>CART <span class ="price" style="color:red"></span> <i class="fa fa-shopping cart"></i>
+                            <b></b></h4></span></h4>
                             <p><a href="#">Product 1 </a> <span class="price">$15</span></p>
                             <p><a href="#">Product 2 </a> <span class="price">$25</span></p>
-                            <p><a href="#">Product 3</a> <span class="price">$75</span></p>
-                            <p><a href="#">Product 4</a> <span class="price">$65</span></p>
+                            <p><a href="#">Product 3</a> <span class="price">$70</span></p>
+                            <p><a href="#">Product 4</a> <span class="price">$60</span></p>
                             <p><a href="#">Product 5 </a> <span class="price">$80</span></p>
                             <p><a href="#">Product 6 </a> <span class="price">$10</span></p>
                             <hr>
-                            <p>Total <spam class="price" style="color:red"><b>$30</b></spam></p>
-                            
-                            
-                            
-                            </body>
-                            </html>
-                            
-                            
-                        
+                            <p>Total <spam class="price" style="color:red"><b>$260</b></spam></p>
                         </div>
-                
+                    </div>
+                    <input type ="submit" value=" Continue to Checkout" class="btn">
+                            </form>
+                </div></div></body>
                             
-                     </div>   
-</div>
-     </div>   
-</div>
-
-
+                </html>
+                            
+                            
+                      
 
 
 
