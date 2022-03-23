@@ -8,22 +8,21 @@
     </title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script type="text/javascript">
-    function printreview(){
-        var rowNum=3;
-        while(rowNum<11)
-        {
-        var x=document.review.email.value;
-        var y=document.review.ta1.value;
-        document.write(x+" "+y);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+function printreview(){
 
-        document.getElementById("tdEmail"+rowNum).innerText=x;
-        document.getElementById("tdReview"+rowNum).innerText=y;
-       rowNum++;
+var x=document.review.email.value;
+var y=document.review.ta1.value;
+//document.write(x+" "+y);
+alert("Email: "+x+" Comment: "+y );
 
-      }
-    }
-    </script>
+$("#tab1").append('<tr><td style="color:purple";>'+x+'</td><td style="color:red;">'+y+'</td></tr>');
+
+}
+</script>
+       
+    
 
 </head>
 

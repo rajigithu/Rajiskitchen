@@ -7,24 +7,22 @@
       RAJIS KITCHEN
     </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
+    
 
-    function printreview(){
-        var rowNum=3;
+        function printreview(){
 
-        while(rowNum<11)
-        {
-        var x=document.review.email.value;
-        var y=document.review.ta1.value;
-        document.write(x+" "+y);
-
-        document.getElementById("tdEmail"+rowNum).innerText=x;
-        document.getElementById("tdReview"+rowNum).innerText=y;
-       rowNum++;
-
-      }
-    }
-    </script>
+            var x=document.review.email.value;
+            var y=document.review.ta1.value;
+            //document.write(x+" "+y);
+            alert("Email: "+x+" Comment: "+y );
+            
+            $("#tab1").append('<tr><td style="color:rgb(83, 128, 0)";>'+x+'</td><td style="color:red;">'+y+'</td></tr>');
+            
+            }
+            </script>
+            
 
 </head>
 
