@@ -40,7 +40,8 @@
  }  
  
 .container {
-    background-color:rgb(46, 44, 46);
+    background-color white 
+    (139, 136, 136);
     padding: 5px 20px 10px 20px;
     border: 1px solid rgb(185, 107, 107);
     border-radius: 3px;
@@ -76,6 +77,6 @@ a {
 
 span.price{
     float: right;
-    color:rgb(80, 73, 73);
+    color:rgb(65, 20, 20);
 }
 
