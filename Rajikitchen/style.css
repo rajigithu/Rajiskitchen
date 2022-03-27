@@ -1,6 +1,6 @@
     
 #button1{
-background-color: purple;
+background-color: rgba(43, 40, 32, 0.979);
 width:14% ; 
 height: 7%;
 font-family: serif;
@@ -15,9 +15,9 @@ background-size:100% 100%;
 }
 
 input[type=submit], input[type=reset] {
-  background-color: #04AA6D;
+  background-color: #92316a;
   border: none;
-  color: white;
+  color: rgb(71, 69, 69);
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -26,10 +26,10 @@ input[type=submit], input[type=reset] {
 
 .divcontainer{
   border-radius: 25px 25px 25px 25px;
-  background: lightgreen;
+  background: rgb(32, 36, 32);
   padding: 40px; 
   width: 300px;
   height: 220px;
   align-items:center;
-  color: indigo;
+  color: rgb(234, 227, 240);
   }

@@ -3,6 +3,7 @@
     font-family: Arial;
         font-size: 17px;
         padding: 8px;
+        color: antiquewhite;
     }
     *{
     box-sizing: border-box;
@@ -39,15 +40,16 @@
  }  
  
 .container {
-    background-color:rgb(229, 130, 238);
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
+    background-color:rgb(46, 44, 46);
+    padding: 5px 20px 10px 20px;
+    border: 1px solid rgb(185, 107, 107);
     border-radius: 3px;
 }
 
 input[type-text]{
     width: 100%;
     margin-bottom:20px;
+    color: aqua;
     padding:12px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -65,7 +67,7 @@ label {
     }
 
 a {
-    color:#2196F3;
+    color:#989ca0;
     }
 
     hr {
@@ -74,6 +76,6 @@ a {
 
 span.price{
     float: right;
-    color:grey;
+    color:rgb(80, 73, 73);
 }
 
